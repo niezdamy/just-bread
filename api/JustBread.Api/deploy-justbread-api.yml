@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: justbread-api
+  labels:
+    app: justbread-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      service: justbread-api
+  template:
+    metadata:
+      labels:
+        app: justbread-app
+        service: justbread-api
+    spec:
+      containers:
+        - name: justbread-api
+          image: justbread-api-image:0.0.6
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 80
+              protocol: TCP
+          env:
+            - name: ASPNETCORE_URLS
+              value: http://+:80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: justbread-api
+  labels:
+    app: justbread-app
+    service: justbread-api
+spec:
+  ports:
+    - port: 80
+      targetPort: 80
+      protocol: TCP
+  selector:
+    service: justbread-api

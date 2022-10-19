@@ -1,5 +1,13 @@
 # JustBread.Api created in .Net Core 6.0
 
+## Dotnet locally
+
+```
+dotnet run
+```
+
+## Docker locally
+
 JustBread.Api is dockerized, to run local docker image type:
 
 ```
@@ -25,4 +33,41 @@ docker rm justbread-api
 
 docker rmi justbread-api-image
 docker rmi mcr.microsoft.com/dotnet/aspnet:6.0
+```
+
+## Kubernetes locally on minikube
+
+https://minikube.sigs.k8s.io/docs/start/
+
+```
+minikube start
+minikube image load justbread-api-image:0.0.6
+
+kubectl apply -f deploy-justbread-api.yml
+kubectl get all
+```
+
+connect to swagger ui
+
+```
+kubectl port-forward service/justbread-api 7080:80
+
+or
+
+minikube service justbread-api
+
+```
+
+"restart" deployment (scale-0 scale-1)
+
+```
+kubectl scale deployment justbread-api --replicas=0
+kubectl scale deployment justbread-api --replicas=1
+```
+
+"restart" with rolout
+
+```
+kubectl rollout restart deployment justbread-api
+
 ```
