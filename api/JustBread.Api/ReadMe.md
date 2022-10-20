@@ -58,6 +58,19 @@ minikube service justbread-api
 
 ```
 
+## Terraform locally with minikube
+
+1. Make sure that docker is up
+2. Make sure that minikube is up
+
+```
+terraform init
+terraform plan
+terraform apply
+```
+
+## Debug useful commands
+
 "restart" deployment (scale-0 scale-1)
 
 ```
@@ -70,4 +83,16 @@ kubectl scale deployment justbread-api --replicas=1
 ```
 kubectl rollout restart deployment justbread-api
 
+```
+
+Clean minikube
+
+```
+minikube delete --all --purge
+```
+
+Terraform format files
+
+```
+terraform fmt
 ```
