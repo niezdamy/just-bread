@@ -5,7 +5,48 @@ provider "kubernetes" {
 
 resource "kubernetes_namespace" "applications-namespace" {
   metadata {
-    name = "justbread-api-ns"
+    name = "justbread-api-namespace"
+  }
+}
+
+
+resource "kubernetes_deployment" "app" {
+  metadata {
+    name = "justbread-api-deployment"
+    namespace = kubernetes_namespace.applications-namespace.id
+    labels = {
+      app = var.app
+    }
+  }
+  spec {
+    replicas = 2
+
+    selector {
+      match_labels = {
+        app = var.app
+      }
+    }
+    template {
+      metadata {
+        labels = {
+          app = var.app
+        }
+      }
+      spec {
+        container {
+          image = var.docker-image
+          name  = var.app
+          port {
+            container_port = 80
+            protocol       = "TCP"
+          }
+          env {
+            name  = "ASPNETCORE_URLS"
+            value = "http://+:80"
+          }
+        }
+      }
+    }
   }
 }
 
