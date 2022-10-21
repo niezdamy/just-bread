@@ -13,7 +13,7 @@ JustBread.Api is dockerized, to run local docker image type:
 ```
 docker build -t justbread-api-image:0.0.6 -f Dockerfile .
 docker images
-docker run --name justbread-api --rm -p 8080:80 justbread-api-image:0.0.6
+docker run -d --name justbread-api --rm -p 8080:80 justbread-api-image:0.0.6
 
 docker ps
 ```
@@ -58,6 +58,26 @@ minikube service justbread-api
 
 ```
 
+## Terraform locally with minikube
+
+1. Make sure that docker is up
+2. Make sure that minikube is up
+
+```
+terraform init
+terraform plan
+terraform apply
+```
+
+## Cloud run deployment
+
+```
+gcloud auth login
+gcloud run deploy justbread-api --image=justbread-api-image:0.0.6 --max-instances=2 --allow-unauthenticated
+```
+
+## Debug useful commands
+
 "restart" deployment (scale-0 scale-1)
 
 ```
@@ -70,4 +90,16 @@ kubectl scale deployment justbread-api --replicas=1
 ```
 kubectl rollout restart deployment justbread-api
 
+```
+
+Clean minikube
+
+```
+minikube delete --all --purge
+```
+
+Terraform format files
+
+```
+terraform fmt
 ```
