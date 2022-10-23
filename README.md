@@ -2,14 +2,17 @@
 
 Baking homemade bread is easy!
 
-Check justbread.app website for more informations. [https://www.justbread.app/](https://www.justbread.app/)  
+Check Just Bread website for more informations. [https://www.justbread.app/](https://www.justbread.app/)  
 
-This repository soon will contains app related code. 
-
+This repository soon will contains app related code.
+ 
 Your feedback is welcome: [Open new issue or request new feature.](https://github.com/niezdamy/just-bread/issues/new)
 
+Designs Created by [Iwona Poprawska](https://www.linkedin.com/in/iwonapoprawska/)
 
+[Design of homepage](https://www.figma.com/file/wKzkSA3qykTvhYUZzB1Qis/Just-Bread-%7C-Iwona-Krzymyk?node-id=73%3A495) - to be implemented in the future 
 
+[Design of mobile app](https://www.figma.com/file/napK6tH8JXtbMFxJo9pxBI/Chlebu-App-%2F-JustBread?node-id=0%3A1)
 ### Check out Just Bread app for free:
 
 Android | iOS
