@@ -1,6 +1,6 @@
 # Just Bread repository 🥖
 
-Baking homemade bread is easy!
+Baking homemade bread is easy! [Behance](https://www.behance.net/gallery/108499917/Just-Bread)
 
 Check Just Bread website for more informations. [https://www.justbread.app/](https://www.justbread.app/)  
 
@@ -10,9 +10,9 @@ Your feedback is welcome: [Open new issue or request new feature.](https://githu
 
 Designs Created by [Iwona Poprawska](https://www.linkedin.com/in/iwonapoprawska/)
 
-[Design of homepage](https://www.figma.com/file/wKzkSA3qykTvhYUZzB1Qis/Just-Bread-%7C-Iwona-Krzymyk?node-id=73%3A495) - to be implemented in the future 
+[Figma design of the homepage](https://www.figma.com/file/wKzkSA3qykTvhYUZzB1Qis/Just-Bread-%7C-Iwona-Krzymyk?node-id=73%3A495) - to be implemented in the future 
 
-[Design of mobile app](https://www.figma.com/file/napK6tH8JXtbMFxJo9pxBI/Chlebu-App-%2F-JustBread?node-id=0%3A1)
+[Figma design of the mobile app](https://www.figma.com/file/napK6tH8JXtbMFxJo9pxBI/Chlebu-App-%2F-JustBread?node-id=0%3A1)
 ### Check out Just Bread app for free:
 
 Android | iOS
