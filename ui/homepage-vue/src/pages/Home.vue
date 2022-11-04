@@ -11,8 +11,8 @@ const { t } = useI18n({
 
 <template>
 
-    <div class="flex m-8 items-center justify-between bg-slate-500">
-        <div>
+    <div class="flex m-8 items-center justify-between bg-blue">
+        <div class="mr-96">
             <p class="mb-4 font-JustBread text-5xl text-gold font-bold ">Just Bread 🍞</p>
             <p class="mb-4 text-xl whitespace-pre-line">{{ t('welcome') }} </p>
             <div class="flex">

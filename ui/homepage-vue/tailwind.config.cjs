@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     colors: {
       gold: "#FFB300",
+      blue: "#3388FF",
     },
     extend: {},
     fontFamily: {
