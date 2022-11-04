@@ -1,10 +1,19 @@
-# Vue 3 + TypeScript + Vite
+# Just Bread homepage
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Implementation of UI created by Iwona Krzymyk [Figma](https://www.figma.com/file/wKzkSA3qykTvhYUZzB1Qis/Just-Bread-%7C-Iwona-Krzymyk?node-id=49%3A346) for Just Bread app.
 
-## Recommended IDE Setup
+## Tech stack:
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+Vue 3 + Typescript + Vite + TailwindCss + i18n
+
+## Start app:
+
+Install volar extention in vscode, then run:
+
+```bash
+npm install
+npm run dev
+```
 
 ## Type Support For `.vue` Imports in TS
 
