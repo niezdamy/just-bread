@@ -5,10 +5,15 @@ module.exports = {
     colors: {
       gold: "#FFB300",
       blue: "#3388FF",
+      whtite_gray: "#FBFBFB",
+      white: "#FFFFFF",
     },
     extend: {},
     fontFamily: {
       JustBread: ['"Source Sans Pro"'],
+    },
+    maxWidth: {
+      1440: "1440px",
     },
     // fontSize: {},
   },
