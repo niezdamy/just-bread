@@ -89,6 +89,8 @@ const { t } = useI18n({
       <p class="m-8"> {{ t('FAQ') }}</p>
       <p class="m-8"> {{ t('contact') }}</p>
       <p class="m-8">{{ t('privacyPolicy') }}</p>
+      <a href="https://www.instagram.com/justbreadapp/"> <img class="m-8" src="../assets/instagram.svg" /> </a>
+
     </div>
   </div>
 
