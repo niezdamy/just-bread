@@ -26,7 +26,7 @@ const { t } = useI18n({
       <img src="../assets/home_1.png" />
     </div>
 
-    <img src="../assets/home_2.png" />
+    <img class="mb-16 " src="../assets/home_2.png" />
 
     <div class="flex w-full justify-center">
       <div class="flex flex-col ">
@@ -42,7 +42,7 @@ const { t } = useI18n({
             <img class="m-2 w-12 h-12" src="../assets/logo_white.svg" />
             <div class="flex mr-4 my-2 w-full justify-between text-lg font-semibold text-gray_dark">
               <p class="">JUSTBREAD</p>
-              <p>Mniam!</p>
+              <p>{{ t('modal1_text3') }}</p>
             </div>
           </div>
           <p class="ml-2 text-2xl font-semibold">{{ t('modal1_text1') }}</p>
@@ -66,25 +66,22 @@ const { t } = useI18n({
       </div>
     </div>
 
-    <!-- <img src="../assets/home_5.jpeg" /> -->
-
     <div class="h-96 bg-[url('./assets/home_5.jpeg')] bg-center bg-cover rounded-3xl ">
-      ELO
-      <!-- ... -->
+
     </div>
 
-    <div class="flex my-8 justify-between ">
+    <div class="flex my-16 justify-between ">
       <div class="flex flex-col bg-gray p-12  rounded-3xl justify-center items-center">
         <img src="../assets/home_phone_3.png" />
-        <p class="mt-8 text-center text-xl font-semibold">{{ t('phone_screen_2_description') }}</p>
+        <p class="mt-8 text-center text-xl font-semibold">{{ t('phone_screen_3_description') }}</p>
       </div>
       <div class="flex flex-col bg-gray p-12  rounded-3xl justify-center items-center">
         <img src="../assets/home_phone_4.png" />
-        <p class="mt-8 text-center text-xl font-semibold">{{ t('phone_screen_2_description') }}</p>
+        <p class="mt-8 text-center text-xl font-semibold">{{ t('phone_screen_4_description') }}</p>
       </div>
       <div class="flex flex-col bg-gray p-12  rounded-3xl justify-center items-center">
         <img src="../assets/home_phone_5.png" />
-        <p class="mt-8 text-center text-xl font-semibold">{{ t('phone_screen_2_description') }}</p>
+        <p class="mt-8 text-center text-xl font-semibold">{{ t('phone_screen_5_description') }}</p>
       </div>
     </div>
 
@@ -110,8 +107,12 @@ const { t } = useI18n({
         in your home
       phone_screen_1_description: Only checked recipes
       phone_screen_2_description: Knowledge base about bread
+      phone_screen_3_description: Simple hydration calculator
+      phone_screen_4_description: Timer with notifications
+      phone_screen_5_description: Easy and healthy recipes
       modal1_text1: Easy like piece of cake!
       modal1_text2: Take hotcakes right from the oven.
+      modal1_text3: Tasty!
       text_1: |
         Pieczenie domowego chleba
         nie musi być trudne
@@ -133,8 +134,12 @@ const { t } = useI18n({
         w twoim domu
       phone_screen_1_description: Wybrane i sprawdzone przepisy
       phone_screen_2_description: Baza wiedzy o chlebie
+      phone_screen_3_description: Prosty kalkulator hydracji
+      phone_screen_4_description: Minutnik w formie powiadomień
+      phone_screen_5_description: Przejrzyste, łatwe i zdrowe przepisy
       modal1_text1: Proste jak bułka z masłem!
       modal1_text2: Wyjmij ciepłe bułeczki z piekarnika.
+      modal1_text3: Miam!
       text_1: |
         Pieczenie domowego chleba
         nie musi być trudne!
