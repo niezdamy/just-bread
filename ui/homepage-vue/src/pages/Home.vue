@@ -85,6 +85,12 @@ const { t } = useI18n({
       </div>
     </div>
 
+    <div class="flex justify-center text-center">
+
+      <p class="text-5xl font-semibold text-gold whitespace-pre-wrap "> {{ t('modal3_text') }}</p>
+
+    </div>
+
     <div class="flex my-8 justify-center bg-white font-semibold">
       <p class="m-8"> {{ t('FAQ') }}</p>
       <p class="m-8"> {{ t('contact') }}</p>
@@ -126,6 +132,9 @@ const { t } = useI18n({
         Pieczenie to nasza pasja, z nami 
         zrobisz pyszną pizzę, chleb na
         zakwasie oraz słodkie przekąski.
+      modal3_text: |
+        More than 2000 installations
+        on iOS and Android platform
       faq: FAQ
       contact: Contact
       privacyPolicy: Privacy Policy
@@ -154,6 +163,9 @@ const { t } = useI18n({
         Pieczenie to nasza pasja, z nami 
         zrobisz pyszną pizzę, chleb na
         zakwasie oraz słodkie przekąski.
+      modal3_text: |
+        Ponad 2000 instalacji aplikacji
+        w systemie iOS oraz Android
       faq: FAQ
       contact: Kontakt
       privacyPolicy: Polityka Prywatności
