@@ -91,6 +91,23 @@ const { t } = useI18n({
 
     </div>
 
+    <div class="flex mt-12 mb-6 justify-center text-center">
+
+      <img src="../assets/home_6.png" />
+      <div class="flex flex-col ml-6 px-32 bg-gold rounded-3xl justify-center">
+        <p class="text-3xl font-semibold">{{ t('modal4_text_1') }} </p>
+        <p class="text-lg">{{ t('modal4_text_2') }} </p>
+
+        <p class="text-3xl mt-6 font-semibold">{{ t('modal4_text_3') }} </p>
+        <p class="text-lg">{{ t('modal4_text_4') }} </p>
+
+        <p class="text-3xl mt-6 font-semibold">{{ t('modal4_text_5') }}</p>
+        <p class="text-lg"> {{ t('modal4_text_6') }}</p>
+
+      </div>
+
+    </div>
+
     <div class="flex my-8 justify-center bg-white font-semibold">
       <p class="m-8"> {{ t('FAQ') }}</p>
       <p class="m-8"> {{ t('contact') }}</p>
@@ -98,6 +115,7 @@ const { t } = useI18n({
       <a href="https://www.instagram.com/justbreadapp/"> <img class="m-8" src="../assets/instagram.svg" /> </a>
 
     </div>
+
   </div>
 
 
@@ -135,6 +153,12 @@ const { t } = useI18n({
       modal3_text: |
         More than 2000 installations
         on iOS and Android platform
+      modal4_text_1: 75% of users
+      modal4_text_2: are foreign
+      modal4_text_3: 42 000 interactions
+      modal4_text_4: with app on iOS
+      modal4_text_5: 7 recipes
+      modal4_text_6: currently in app
       faq: FAQ
       contact: Contact
       privacyPolicy: Privacy Policy
@@ -166,6 +190,12 @@ const { t } = useI18n({
       modal3_text: |
         Ponad 2000 instalacji aplikacji
         w systemie iOS oraz Android
+      modal4_text_1: 75% użytkowników
+      modal4_text_2: to społeczność zagraniczna
+      modal4_text_3: 42 000 interakcji
+      modal4_text_4: z apką na iOS
+      modal4_text_5: Aż 7 przepisów
+      modal4_text_6: dostępnych obecnie w aplikacji
       faq: FAQ
       contact: Kontakt
       privacyPolicy: Polityka Prywatności
