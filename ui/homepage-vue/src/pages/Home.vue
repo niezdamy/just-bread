@@ -87,7 +87,7 @@ const { t } = useI18n({
 
     <div class="flex justify-center text-center">
 
-      <p class="text-5xl font-semibold text-gold whitespace-pre-wrap "> {{ t('modal3_text') }}</p>
+      <p class="text-5xl my-6 font-semibold text-gold whitespace-pre-wrap "> {{ t('modal3_text') }}</p>
 
     </div>
 
@@ -106,6 +106,9 @@ const { t } = useI18n({
 
       </div>
 
+    </div>
+    <div class=" flex w-full justify-center bg-gray rounded-3xl">
+      <p class="m-6 text-xl whitespace-pre-line text-center"> {{ t('modal5_text') }}</p>
     </div>
 
     <div class="flex my-8 justify-center bg-white font-semibold">
@@ -159,6 +162,9 @@ const { t } = useI18n({
       modal4_text_4: with app on iOS
       modal4_text_5: 7 recipes
       modal4_text_6: currently in app
+      modal5_text: |
+        Just Bread was in the TOP 100
+        apps in AppStore in the Food category
       faq: FAQ
       contact: Contact
       privacyPolicy: Privacy Policy
@@ -196,6 +202,9 @@ const { t } = useI18n({
       modal4_text_4: z apką na iOS
       modal4_text_5: Aż 7 przepisów
       modal4_text_6: dostępnych obecnie w aplikacji
+      modal5_text: |
+        Just Bread znalazł się w rankingu TOP 100
+        aplikacji Apple w kategori żywienie!
       faq: FAQ
       contact: Kontakt
       privacyPolicy: Polityka Prywatności
