@@ -4,14 +4,14 @@
 import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n({
-    inheritLocale: true
+  inheritLocale: true
 })
 
 </script>
 
 <template>
-    <h1>About page 🥖</h1>
-    <h2>Translated: {{ t('title') }} </h2>
+  <h1>Privacy policy page 🥖</h1>
+  <h2>Translated: {{ t('title') }} </h2>
 
 </template>
 
@@ -21,7 +21,7 @@ const { t } = useI18n({
 
 <i18n lang="yaml">
     en:
-      title: Frequently asked questions
+      title: Privacy policy page
     pl:
-      title: Najczęściej zadawane pytania
+      title: Polityka prywatności
 </i18n>
