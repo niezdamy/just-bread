@@ -107,8 +107,17 @@ const { t } = useI18n({
       </div>
 
     </div>
-    <div class=" flex w-full justify-center bg-gray rounded-3xl">
+    <div class=" flex w-full my-12 justify-center bg-gray rounded-3xl">
       <p class="m-6 text-xl whitespace-pre-line text-center"> {{ t('modal5_text') }}</p>
+    </div>
+
+    <div class="flex w-full justify-center">
+
+      <div> ELO </div>
+      <div class="flex flex-col bg-gray p-12  rounded-3xl justify-center items-center">
+        <img src="../assets/home_phone_6.png" />
+        <p class="mt-8 text-center text-xl font-semibold">{{ t('phone_screen_6_description') }}</p>
+      </div>
     </div>
 
     <div class="flex my-8 justify-center bg-white font-semibold">
@@ -145,6 +154,7 @@ const { t } = useI18n({
       phone_screen_3_description: Simple hydration calculator
       phone_screen_4_description: Timer with notifications
       phone_screen_5_description: Easy and healthy recipes
+      phone_screen_6_description: Main screen of the app
       modal1_text1: Easy like piece of cake!
       modal1_text2: Take hotcakes right from the oven.
       modal1_text3: Tasty!
@@ -184,6 +194,7 @@ const { t } = useI18n({
       phone_screen_3_description: Prosty kalkulator hydracji
       phone_screen_4_description: Minutnik w formie powiadomień
       phone_screen_5_description: Przejrzyste, łatwe i zdrowe przepisy
+      phone_screen_6_description: Ekran głowny aplikacji
       modal1_text1: Proste jak bułka z masłem!
       modal1_text2: Wyjmij ciepłe bułeczki z piekarnika.
       modal1_text3: Miam!
