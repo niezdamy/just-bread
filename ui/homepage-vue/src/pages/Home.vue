@@ -12,11 +12,12 @@ const { t } = useI18n({
 <template>
   <div class="flex flex-col bg-whtite_gray">
     <div class="flex mx-36 my-16 items-center justify-between">
-      <div class>
+      <div>
         <img src="../assets/Logo_Just_Bread.svg" class="mr-48" />
         <p class="mb-4 text-xl whitespace-pre-line">{{ t('welcome') }} </p>
         <div class="flex">
-          <img class="mr-2" src="../assets/app_store_download.svg" />
+          <a class="mt-2" href="https://apps.apple.com/pl/app/just-bread/id1537955145?l=pl"><img class="mr-2"
+              src="../assets/app_store_download.svg" /></a>
           <a
             href='https://play.google.com/store/apps/details?id=app.JustBread&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
             <img class="h-14" alt='Get it on Google Play'
@@ -108,12 +109,25 @@ const { t } = useI18n({
 
     </div>
     <div class=" flex w-full my-12 justify-center bg-gray rounded-3xl">
-      <p class="m-6 text-xl whitespace-pre-line text-center"> {{ t('modal5_text') }}</p>
+      <p class="m-6 text-2xl whitespace-pre-line text-center"> {{ t('modal5_text') }}</p>
     </div>
 
     <div class="flex w-full justify-center">
 
-      <div> ELO </div>
+      <div class="flex flex-col justify-center items-center w-full text-center">
+        <p class="text-5xl whitespace-pre-wrap font-semibold">{{ t('modal6_text_1') }}</p>
+        <p class="mt-12 text-3xl">{{ t('modal6_text_2') }}</p>
+        <p class="mb-12 text-3xl">{{ t('modal6_text_3') }}</p>
+
+        <div class="flex">
+          <a class="mt-2" href="https://apps.apple.com/pl/app/just-bread/id1537955145?l=pl"><img class="mr-2"
+              src="../assets/app_store_download.svg" /></a>
+          <a
+            href='https://play.google.com/store/apps/details?id=app.JustBread&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+            <img class="h-14" alt='Get it on Google Play'
+              src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' /></a>
+        </div>
+      </div>
       <div class="flex flex-col bg-gray p-12  rounded-3xl justify-center items-center">
         <img src="../assets/home_phone_6.png" />
         <p class="mt-8 text-center text-xl font-semibold">{{ t('phone_screen_6_description') }}</p>
