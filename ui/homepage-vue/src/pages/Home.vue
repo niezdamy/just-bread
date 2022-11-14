@@ -181,6 +181,12 @@ const { t } = useI18n({
       modal5_text: |
         Just Bread was in the TOP 100
         apps in AppStore in the Food category
+      modal6_text_1: |
+        Just Bread is app created
+        for all the fans of 
+        homemade pastries.      
+      modal6_text_2: Rating 5/5 on Apple Store
+      modal6_text_3: Rating 4,5/5 on Google Play
       faq: FAQ
       contact: Contact
       privacyPolicy: Privacy Policy
@@ -222,6 +228,12 @@ const { t } = useI18n({
       modal5_text: |
         Just Bread znalazł się w rankingu TOP 100
         aplikacji Apple w kategori żywienie!
+      modal6_text_1: |
+        Just Bread to aplikacja stworzona 
+        dla wszystkich miłośników
+        domowych wypieków.      
+      modal6_text_2: Ocena 5/5 na Apple Store
+      modal6_text_3: Ocena 4,5/5 na Google Play
       faq: FAQ
       contact: Kontakt
       privacyPolicy: Polityka Prywatności
