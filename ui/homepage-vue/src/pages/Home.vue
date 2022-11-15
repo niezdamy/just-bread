@@ -11,9 +11,9 @@ const { t } = useI18n({
 
 <template>
   <div class="flex flex-col bg-whtite_gray">
-    <div class="flex mx-36 my-16 items-center justify-between">
+    <div class=" flex flex-col my-16 justify-between items-center content-center mx-32 sm:flex-row ">
       <div>
-        <img src="../assets/Logo_Just_Bread.svg" class="mr-48" />
+        <img src=" ../assets/Logo_Just_Bread.svg" />
         <p class="mb-4 text-xl whitespace-pre-line">{{ t('welcome') }} </p>
         <div class="flex">
           <a class="mt-2" href="https://apps.apple.com/pl/app/just-bread/id1537955145?l=pl"><img class="mr-2"
@@ -24,7 +24,7 @@ const { t } = useI18n({
               src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' /></a>
         </div>
       </div>
-      <img src="../assets/home_1.png" />
+      <img class="scale-50 sm:scale-100" src="../assets/home_1.png" />
     </div>
 
     <img class="mb-16 " src="../assets/home_2.png" />
