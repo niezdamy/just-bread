@@ -13,7 +13,7 @@ const { t } = useI18n({
   <div class="flex flex-col bg-whtite_gray">
     <div class=" flex flex-col my-16 justify-between items-center content-center mx-32 sm:flex-row ">
       <div>
-        <img src=" ../assets/Logo_Just_Bread.svg" />
+        <img src="../assets/Logo_Just_Bread.svg" />
         <p class="mb-4 text-xl whitespace-pre-line">{{ t('welcome') }} </p>
         <div class="flex">
           <a class="mt-2" href="https://apps.apple.com/pl/app/just-bread/id1537955145?l=pl"><img class="mr-2"
