@@ -2,6 +2,7 @@
 <script setup lang="ts">
 
 import { useI18n } from 'vue-i18n'
+import DownloadButtons from '../components/DownloadButtons.vue'
 
 const { t } = useI18n({
   inheritLocale: true
@@ -15,14 +16,7 @@ const { t } = useI18n({
       <div>
         <img src="../assets/Logo_Just_Bread.svg" />
         <p class="mb-4 text-xl whitespace-pre-line">{{ t('welcome') }} </p>
-        <div class="flex">
-          <a class="mt-2" href="https://apps.apple.com/pl/app/just-bread/id1537955145?l=pl"><img class="mr-2"
-              src="../assets/app_store_download.svg" /></a>
-          <a
-            href='https://play.google.com/store/apps/details?id=app.JustBread&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
-            <img class="h-14" alt='Get it on Google Play'
-              src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' /></a>
-        </div>
+        <download-buttons></download-buttons>
       </div>
       <img class="scale-50 sm:scale-100" src="../assets/home_1.png" />
     </div>
@@ -68,7 +62,11 @@ const { t } = useI18n({
     </div>
 
     <div class="h-96 bg-[url('./assets/home_5.jpeg')] bg-center bg-cover rounded-3xl ">
-
+      <div class="flex flex-col w-full h-full justify-center items-center text-white">
+        <p class="text-xl font-semibold">{{ t('modal7_text_1') }}</p>
+        <p class="my-2 text-4xl font-semibold">{{ t('modal7_text_2') }}</p>
+        <download-buttons></download-buttons>
+      </div>
     </div>
 
     <div class="flex my-16 justify-between ">
@@ -119,14 +117,8 @@ const { t } = useI18n({
         <p class="mt-12 text-3xl">{{ t('modal6_text_2') }}</p>
         <p class="mb-12 text-3xl">{{ t('modal6_text_3') }}</p>
 
-        <div class="flex">
-          <a class="mt-2" href="https://apps.apple.com/pl/app/just-bread/id1537955145?l=pl"><img class="mr-2"
-              src="../assets/app_store_download.svg" /></a>
-          <a
-            href='https://play.google.com/store/apps/details?id=app.JustBread&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
-            <img class="h-14" alt='Get it on Google Play'
-              src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' /></a>
-        </div>
+        <download-buttons></download-buttons>
+
       </div>
       <div class="flex flex-col bg-gray p-12  rounded-3xl justify-center items-center">
         <img src="../assets/home_phone_6.png" />
@@ -201,6 +193,8 @@ const { t } = useI18n({
         homemade pastries.      
       modal6_text_2: Rating 5/5 on Apple Store
       modal6_text_3: Rating 4,5/5 on Google Play
+      modal7_text_1: Hungry? What are you waiting for?
+      modal7_text_2: Bake the bread with Just Bread!
       faq: FAQ
       contact: Contact
       privacyPolicy: Privacy Policy
@@ -248,6 +242,8 @@ const { t } = useI18n({
         domowych wypieków.      
       modal6_text_2: Ocena 5/5 na Apple Store
       modal6_text_3: Ocena 4,5/5 na Google Play
+      modal7_text_1: Głodny? Na co czekasz?
+      modal7_text_2: Zrób chleb z Just Bread!
       faq: FAQ
       contact: Kontakt
       privacyPolicy: Polityka Prywatności
