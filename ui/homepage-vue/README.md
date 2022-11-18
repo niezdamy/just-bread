@@ -15,6 +15,12 @@ npm install
 npm run dev
 ```
 
+You can reach the app under 5137 port:
+
+```
+http://127.0.0.1:5173/#/
+```
+
 ## Type Support For `.vue` Imports in TS
 
 Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's Take Over mode by following these steps:
