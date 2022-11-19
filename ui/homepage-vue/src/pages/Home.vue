@@ -126,11 +126,11 @@ const { t } = useI18n({
       </div>
     </div>
 
-    <div class="flex my-8 justify-between">
-      <img src="../assets/home_7.png" />
-      <img src="../assets/home_8.png" />
-      <img src="../assets/home_9.png" />
-      <img src="../assets/home_10.png" />
+    <div class="flex scale-50 my-8 justify-between w-full md:scale-100">
+      <img class="mr-2" src="../assets/home_7.png" />
+      <img class="mr-2" src="../assets/home_8.png" />
+      <img class="mr-2" src="../assets/home_9.png" />
+      <img class="mr-2" src="../assets/home_10.png" />
     </div>
 
     <div class="flex my-8 justify-center bg-white font-semibold">
