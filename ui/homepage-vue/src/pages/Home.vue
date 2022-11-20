@@ -126,6 +126,13 @@ const { t } = useI18n({
       </div>
     </div>
 
+    <div class="flex scale-50 my-8 justify-between w-full md:scale-100">
+      <img class="mr-2" src="../assets/home_7.png" />
+      <img class="mr-2" src="../assets/home_8.png" />
+      <img class="mr-2" src="../assets/home_9.png" />
+      <img class="mr-2" src="../assets/home_10.png" />
+    </div>
+
     <div class="flex my-8 justify-center bg-white font-semibold">
       <router-link to="/faq">
         <p class="m-8"> {{ t('faq') }}</p>
@@ -136,9 +143,7 @@ const { t } = useI18n({
       <router-link to="/privacy">
         <p class="m-8">{{ t('privacyPolicy') }}</p>
       </router-link>
-      <a href="https://www.instagram.com/justbreadapp/"> <img class="object-scale-down m-8"
-          src="../assets/instagram.svg" /> </a>
-
+      <a href="https://www.instagram.com/justbreadapp/"> <img class="m-8" src="../assets/instagram.svg" /> </a>
     </div>
 
   </div>
