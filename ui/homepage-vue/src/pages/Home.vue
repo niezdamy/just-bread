@@ -11,30 +11,29 @@ const { t } = useI18n({
 </script>
 
 <template>
-  <div class="flex flex-col bg-whtite_gray">
-    <div class=" flex flex-col my-16 justify-between items-center content-center mx-32 sm:flex-row ">
-      <div>
-        <img src="../assets/Logo_Just_Bread.svg" />
+  <div class="flex flex-col bg-whtite_gray bg-blue">
+    <div class=" flex flex-col mb-16 justify-between items-center content-center sm:flex-row ">
+      <div class="sm:ml-32 ">
+        <img class="object-scale-down" src="../assets/Logo_Just_Bread.svg" />
         <p class="mb-4 text-xl whitespace-pre-line">{{ t('welcome') }} </p>
         <download-buttons></download-buttons>
       </div>
-      <img class="scale-50 sm:scale-100" src="../assets/home_1.png" />
+      <img class="object-scale-down mt-4 max-h-96 sm:my-0 sm:max-h-full " src="../assets/home_1.png" />
     </div>
 
-    <img class="mb-16 " src="../assets/home_2.png" />
+    <img class="object-scale-down" src="../assets/home_2.png" />
 
-    <div class="flex w-full justify-center">
-      <div class="flex flex-col ">
-
-        <div class="bg-gray p-12 mr-16 rounded-3xl justify-center items-center">
-          <img src="../assets/home_phone_1.png" />
+    <div class="flex flex-col w-full justify-center sm:flex-row">
+      <div class="flex flex-col m-16 bg-gray_dark justify-center">
+        <div class="flex flex-col bg-gray p-12 rounded-3xl justify-center items-center">
+          <img class="object-scale-down" src="../assets/home_phone_1.png" />
           <p class="mt-8 text-center text-xl font-semibold">{{ t('phone_screen_1_description') }}</p>
         </div>
-        <img class="my-16 mr-16" src="../assets/home_3.png" />
+        <img class="object-scale-down my-4" src="../assets/home_3.png" />
 
         <div class="flex flex-col w-full p-4 bg-gold rounded-3xl">
           <div class="flex items-center">
-            <img class="m-2 w-12 h-12" src="../assets/logo_white.svg" />
+            <img class="object-scale-down m-2 w-12 h-12" src="../assets/logo_white.svg" />
             <div class="flex mr-4 my-2 w-full justify-between text-lg font-semibold text-gray_dark">
               <p class="">JUSTBREAD</p>
               <p>{{ t('modal1_text3') }}</p>
@@ -45,16 +44,16 @@ const { t } = useI18n({
         </div>
         <p class="my-12 w-full whitespace-pre-wrap text-2xl">{{ t('modal2_text') }}</p>
       </div>
-      <div class="flex flex-col m-16 ml-32 ">
+      <div class="flex flex-col m-16 bg-gray_dark ">
         <p class="py-16 font-semibold text-5xl whitespace-pre-wrap">{{ t('text_1') }}</p>
 
         <p class="pt-0 text-2xl whitespace-pre-wrap">{{ t('text_2') }}</p>
 
-        <img class="my-32" src="../assets/home_4.png" />
+        <img class="object-scale-down my-32" src="../assets/home_4.png" />
 
-        <div class="flex w-full justify-end">
-          <div class="flex flex-col bg-gray p-12  rounded-3xl justify-center items-center">
-            <img src="../assets/home_phone_2.png" />
+        <div class="flex w-full justify-center sm:justify-end">
+          <div class="flex flex-col bg-gray p-12 rounded-3xl justify-center items-center">
+            <img class="object-scale-down" src="../assets/home_phone_2.png" />
             <p class="mt-8 text-center text-xl font-semibold">{{ t('phone_screen_2_description') }}</p>
           </div>
         </div>
@@ -71,15 +70,15 @@ const { t } = useI18n({
 
     <div class="flex my-16 justify-between ">
       <div class="flex flex-col bg-gray p-12  rounded-3xl justify-center items-center">
-        <img src="../assets/home_phone_3.png" />
+        <img class="object-scale-down" src="../assets/home_phone_3.png" />
         <p class="mt-8 text-center text-xl font-semibold">{{ t('phone_screen_3_description') }}</p>
       </div>
       <div class="flex flex-col bg-gray p-12  rounded-3xl justify-center items-center">
-        <img src="../assets/home_phone_4.png" />
+        <img class="object-scale-down" src="../assets/home_phone_4.png" />
         <p class="mt-8 text-center text-xl font-semibold">{{ t('phone_screen_4_description') }}</p>
       </div>
       <div class="flex flex-col bg-gray p-12  rounded-3xl justify-center items-center">
-        <img src="../assets/home_phone_5.png" />
+        <img class="object-scale-down" src="../assets/home_phone_5.png" />
         <p class="mt-8 text-center text-xl font-semibold">{{ t('phone_screen_5_description') }}</p>
       </div>
     </div>
@@ -90,10 +89,11 @@ const { t } = useI18n({
 
     </div>
 
-    <div class="flex mt-12 mb-6 justify-center text-center">
+    <div class="flex flex-col mt-12 mb-6 justify-center text-center sm:flex-row">
 
-      <img src="../assets/home_6.png" />
-      <div class="flex flex-col ml-6 px-32 bg-gold rounded-3xl justify-center">
+      <img class="object-scale-down" src="../assets/home_6.png" />
+
+      <div class="flex flex-col bg-gold rounded-3xl justify-center">
         <p class="text-3xl font-semibold">{{ t('modal4_text_1') }} </p>
         <p class="text-lg">{{ t('modal4_text_2') }} </p>
 
@@ -106,11 +106,11 @@ const { t } = useI18n({
       </div>
 
     </div>
-    <div class=" flex w-full my-12 justify-center bg-gray rounded-3xl">
+    <div class="flex w-full my-12 justify-center bg-gray rounded-3xl">
       <p class="m-6 text-2xl whitespace-pre-line text-center"> {{ t('modal5_text') }}</p>
     </div>
 
-    <div class="flex w-full justify-center">
+    <div class="flex flex-col w-full justify-center sm:flex-row">
 
       <div class="flex flex-col justify-center items-center w-full text-center">
         <p class="text-5xl whitespace-pre-wrap font-semibold">{{ t('modal6_text_1') }}</p>
@@ -121,14 +121,14 @@ const { t } = useI18n({
 
       </div>
       <div class="flex flex-col bg-gray p-12  rounded-3xl justify-center items-center">
-        <img src="../assets/home_phone_6.png" />
+        <img class="object-scale-down" src="../assets/home_phone_6.png" />
         <p class="mt-8 text-center text-xl font-semibold">{{ t('phone_screen_6_description') }}</p>
       </div>
     </div>
 
     <div class="flex my-8 justify-center bg-white font-semibold">
       <router-link to="/faq">
-        <p class="m-8"> {{ t('FAQ') }}</p>
+        <p class="m-8"> {{ t('faq') }}</p>
       </router-link>
       <router-link to="/contact">
         <p class="m-8"> {{ t('contact') }}</p>
@@ -136,7 +136,8 @@ const { t } = useI18n({
       <router-link to="/privacy">
         <p class="m-8">{{ t('privacyPolicy') }}</p>
       </router-link>
-      <a href="https://www.instagram.com/justbreadapp/"> <img class="m-8" src="../assets/instagram.svg" /> </a>
+      <a href="https://www.instagram.com/justbreadapp/"> <img class="object-scale-down m-8"
+          src="../assets/instagram.svg" /> </a>
 
     </div>
 
