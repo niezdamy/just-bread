@@ -51,7 +51,7 @@ const { t } = useI18n({
 
         <img class="object-scale-down my-24" src="../assets/home_4.png" />
 
-        <div class="flex w-full justify-center sm:justify-end">
+        <div class="flex w-full justify-center mb-8 sm:justify-end sm:mb-0">
           <div class="flex flex-col bg-gray p-12 rounded-3xl justify-center items-center">
             <img class="object-scale-down" src="../assets/home_phone_2.png" />
             <p class="mt-8 text-center text-xl font-semibold">{{ t('phone_screen_2_description') }}</p>
