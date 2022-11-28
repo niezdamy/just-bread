@@ -3,6 +3,7 @@
 
 import { useI18n } from 'vue-i18n'
 import DownloadButtons from '../components/DownloadButtons.vue'
+import NavigationBar from '../components/NavigationBar.vue'
 
 const { t } = useI18n({
   inheritLocale: true
@@ -128,18 +129,7 @@ const { t } = useI18n({
       <img class="mr-2" src="../assets/home_10.png" />
     </div>
 
-    <div class="flex mb-8 justify-center bg-white font-semibold">
-      <router-link to="/faq">
-        <p class="m-8"> {{ t('faq') }}</p>
-      </router-link>
-      <router-link to="/contact">
-        <p class="m-8"> {{ t('contact') }}</p>
-      </router-link>
-      <router-link to="/privacy">
-        <p class="m-8">{{ t('privacyPolicy') }}</p>
-      </router-link>
-      <a href="https://www.instagram.com/justbreadapp/"> <img class="m-8" src="../assets/instagram.svg" /> </a>
-    </div>
+    <navigation-bar></navigation-bar>
 
   </div>
 
@@ -196,9 +186,6 @@ const { t } = useI18n({
       modal6_text_3: Rating 4,5/5 on Google Play
       modal7_text_1: Hungry? What are you waiting for?
       modal7_text_2: Bake the bread with Just Bread!
-      faq: FAQ
-      contact: Contact
-      privacyPolicy: Privacy Policy
 
     pl:
       welcome: | 
@@ -245,7 +232,4 @@ const { t } = useI18n({
       modal6_text_3: Ocena 4,5/5 na Google Play
       modal7_text_1: Głodny? Na co czekasz?
       modal7_text_2: Zrób chleb z Just Bread!
-      faq: FAQ
-      contact: Kontakt
-      privacyPolicy: Polityka Prywatności
 </i18n>
